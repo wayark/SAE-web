@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-family:optima, sans-serif;
+    
+}
+.logo-iut{
+  width: 100vw;
+  min-width: 200px;
+  max-width: 600px;
+}
+body{
+    background-color:#EEEDED;
+    display: grid;
+
+}
+footer, .bordure-haut{
+    background-color:#57585A ;
+    height: 3vh;
+    width: 100%;
+}
+.content{
+    min-height: 100vh;
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#57585A ;
+    height: 50px;
+    z-index: 3;
+}
+
+#nav a {
+    font-size: calc(10px + 2vw);
+    color:white;
+}
+
+#nav a:nth-child(2) {
+    margin: 0 0 0 10vw;
+}
+
+#nav a:nth-child(4) {
+    margin: 0 23vw 0 0;
+}
+nav a:hover{
+  text-decoration:underline#bdbdbd ;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.rubrique{
+    display: flex;
+    height: 20vh;
+    max-height: 200px;
+    background-color: #E3BB75;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(25px + 4vw);
+    color: #494a4b;
+}
+.texte{
+    display:grid;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-rows: 6vh auto 5vh auto 15vh;
+    grid-template-columns:10vw 25vw 1vw 25vw 1vw 25vw 10vw;
+    font-size: 15px;
+}
+
+.site{
+    grid-row: 2;
+    border: solid #494a4b;
+    font-size: calc(2px + 1vw);
+
+}
+.texte h1{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row: 1;
+    font-size: calc(10px + 1vw);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.texte div:nth-child(2){
+    grid-column: 2;
+}
+
+.texte div:nth-child(3){
+    grid-column: 4;
+}
+
+.texte div:nth-child(4){
+    grid-column: 6;
+}
+
+.map{
+    border: solid #494a4b;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    grid-row: 4;
+}
+
+.map iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.bourg{
+    grid-column: 2;
+}
+
+.doua{
+    grid-column: 4;   
+}
+
+.gratte{
+    grid-column: 6;
+}
