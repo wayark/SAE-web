@@ -58,6 +58,7 @@ nav a:hover{
 .rubrique{
     display: flex;
     height: 20vh;
+    min-height: 50px;
     max-height: 200px;
     background-color: #E3BB75;
     align-items: center;
@@ -149,4 +150,10 @@ nav a:hover{
     .texte p:nth-child(3){
       grid-column: 2;
     }
+    #nav a:nth-child(2) {
+      margin: 0 0 0 5vw;
+  }
+  #nav a:nth-child(4) {
+      margin: 0 15vw 0 0;
+  }
   }
