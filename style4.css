@@ -70,17 +70,23 @@ nav a:hover{
 .texte{
     display:grid;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid-template-rows: 5vh 10vh auto 5vh auto 10vh;
+    grid-template-rows: 5vh 10vh auto 5vh auto 5vh 10vh auto 10vh;
     grid-template-columns:10vw 40vw 40vw ;
     font-size: 15px;
 }
 .texte>h1{
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row: 2;
     display: flex;
     justify-content: center;
     align-content: center;
+    text-decoration: underline;
+}
+.bde{
+    grid-row: 2;
+}
+.art{
+    grid-row: 7;
 }
 .intro{
     grid-row:5 ;
@@ -99,4 +105,10 @@ nav a:hover{
     max-width: 400px;
     grid-row: 3;
     grid-column: 3
+}
+.activite{
+    grid-row: 8;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
 }
